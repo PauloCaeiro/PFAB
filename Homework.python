@@ -1,0 +1,47 @@
+import math 
+
+print "Results for problem 1"
+# Solution Code for problem 1
+first = "Paulo"
+last = "Caeiro"
+age = 36
+
+print first ,last ,age
+print "\n"
+
+print "Results for problem 2"
+# Solution Code for problem 2
+# Given data
+sideA = 12.55
+sideB = 17.85
+
+# Pythagorean theorem - (sideC)^2 = (sideA)^2 + (sideB)^2
+# sideC = math.sqrt((sideC)^2)
+
+# Formula used to obtain Side C value
+sideC = math.sqrt((sideA*sideA) + (sideB*sideB))
+
+print "Given the data, this are the measures of the triangle sides:"
+print "Side A equals" ,sideA
+print "Side B equals" ,sideB
+print "Side C equals" ,sideC
+print "\n"
+
+print "Results for problem 3"
+# Solution Code for problem 3
+# Given data
+operand1 = 95 # Value for the first operand
+operand2 = 64.5 # Value for the second operand
+
+print operand1 ,"+", operand2 ,"=", operand1+operand2
+print operand1 ,"-", operand2 ,"=", operand1-operand2
+print operand1 ,"*", operand2 ,"=", operand1*operand2
+print operand1 ,"/", operand2 ,"=", operand1/operand2
+print operand1 ,"%", operand2 ,"=", operand1%operand2
+
+# I use this method because like this if some variable value change
+# i don't need to change anything else in my code and at the same
+# time it can be better understood by others that read the code
+
+# Note: in the first line i had to add an import statement to be able
+# to use math functions

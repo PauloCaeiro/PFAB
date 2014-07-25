@@ -1,0 +1,36 @@
+import sys
+
+# Variable that have the value of the lenght of the argv Array
+argvLen = len(sys.argv)
+
+# Variable that have the number of tests inserted in the input excluding the first argument
+numOfTests = argvLen - 1
+
+# Variable initialized that will have in the end the average of the test values
+avgTest = 0
+
+# Variable that will have the couting down number of the tests to accumulate
+testCount = numOfTests
+
+while testCount > 0:
+    avgTest = avgTest + int(sys.argv[testCount])
+    testCount = testCount - 1
+
+# Compute the average value
+avgTest = avgTest/numOfTests
+
+# According to the average value it is define the grade letter
+if avgTest >= 90:
+    grade = "A"
+elif avgTest >= 80:
+    grade = "B"
+elif avgTest >= 70:
+    grade = "C"
+elif avgTest >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+# Values output
+print "The average score is: ", avgTest
+print "Letter Grade: ", grade

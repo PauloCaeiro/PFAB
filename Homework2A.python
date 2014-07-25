@@ -1,0 +1,9 @@
+# Valeus input into variables
+costPrice = input("What is the cost of the item? ")
+taxRate = input("What is the sale tax Rate (Expressed as 0.XX)? ")
+
+# Compute the full price into a given variable
+totalPrice = costPrice * taxRate + costPrice
+
+# Output of the full price
+print "The full price of the item is $",totalPrice

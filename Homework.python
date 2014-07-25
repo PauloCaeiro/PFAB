@@ -44,4 +44,4 @@ print operand1 ,"%", operand2 ,"=", operand1%operand2
 # time it can be better understood by others that read the code
 
 # Note: in the first line i had to add an import statement to be able
-# to use math functions
+# to use lib math functions
